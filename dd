@@ -1,0 +1,1040 @@
+[1mdiff --git a/HelloWorld/.classpath b/HelloWorld/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4918736[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.classpath[m
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m[41m[m
+[32m+[m[32m<classpath>[m[41m[m
+[32m+[m	[32m<classpathentry kind="src" output="target/classes" path="src/main/java">[m[41m[m
+[32m+[m		[32m<attributes>[m[41m[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m[41m[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m[41m[m
+[32m+[m		[32m</attributes>[m[41m[m
+[32m+[m	[32m</classpathentry>[m[41m[m
+[32m+[m	[32m<classpathentry including="**/*.java" kind="src" path="src/main/resources"/>[m[41m[m
+[32m+[m	[32m<classpathentry kind="src" output="target/test-classes" path="src/test/java">[m[41m[m
+[32m+[m		[32m<attributes>[m[41m[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m[41m[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m[41m[m
+[32m+[m		[32m</attributes>[m[41m[m
+[32m+[m	[32m</classpathentry>[m[41m[m
+[32m+[m	[32m<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/resources"/>[m[41m[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">[m[41m[m
+[32m+[m		[32m<attributes>[m[41m[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m[41m[m
+[32m+[m			[32m<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>[m[41m[m
+[32m+[m		[32m</attributes>[m[41m[m
+[32m+[m	[32m</classpathentry>[m[41m[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">[m[41m[m
+[32m+[m		[32m<attributes>[m[41m[m
+[32m+[m			[32m<attribute name="owner.project.facets" value="java"/>[m[41m[m
+[32m+[m		[32m</attributes>[m[41m[m
+[32m+[m	[32m</classpathentry>[m[41m[m
+[32m+[m	[32m<classpathentry kind="output" path="target/classes"/>[m[41m[m
+[32m+[m[32m</classpath>[m[41m[m
+[1mdiff --git a/HelloWorld/.project b/HelloWorld/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..93b564c[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.project[m
+[36m@@ -0,0 +1,47 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>HelloWorld</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.wst.common.project.facet.core.builder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.springframework.ide.eclipse.core.springbuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.wst.validation.validationbuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.m2e.core.maven2Builder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.springframework.ide.eclipse.core.springnature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.m2e.core.maven2Nature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.wst.common.project.facet.core.nature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.wst.jsdt.core.jsNature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/HelloWorld/.settings/org.eclipse.jdt.core.prefs b/HelloWorld/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6249222[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=1.7[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=1.7[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.lineNumber=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.localVariable=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.sourceFile=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.assertIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.forbiddenReference=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=1.7[m
+[1mdiff --git a/HelloWorld/.settings/org.eclipse.m2e.core.prefs b/HelloWorld/.settings/org.eclipse.m2e.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f897a7f[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.eclipse.m2e.core.prefs[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32mactiveProfiles=[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32mresolveWorkspaceProjects=true[m
+[32m+[m[32mversion=1[m
+[1mdiff --git a/HelloWorld/.settings/org.eclipse.wst.common.component b/HelloWorld/.settings/org.eclipse.wst.common.component[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a624797[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.eclipse.wst.common.component[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project-modules id="moduleCoreId" project-version="1.5.0">[m
+[32m+[m	[32m<wb-module deploy-name="HelloWorld">[m
+[32m+[m[32m        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>[m
+[32m+[m		[32m<wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>[m
+[32m+[m		[32m<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>[m
+[32m+[m		[32m<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>[m
+[32m+[m		[32m<property name="java-output-path" value="target/classes"/>[m
+[32m+[m[32m        <property name="context-root" value="world"/>[m
+[32m+[m	[32m</wb-module>[m
+[32m+[m[32m</project-modules>[m
+[1mdiff --git a/HelloWorld/.settings/org.eclipse.wst.common.project.facet.core.xml b/HelloWorld/.settings/org.eclipse.wst.common.project.facet.core.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c93d1fe[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.eclipse.wst.common.project.facet.core.xml[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m[41m[m
+[32m+[m[32m<faceted-project>[m[41m[m
+[32m+[m[32m  <fixed facet="jst.web"/>[m[41m[m
+[32m+[m[32m  <fixed facet="jst.java"/>[m[41m[m
+[32m+[m[32m  <installed facet="jst.java" version="1.7"/>[m[41m[m
+[32m+[m[32m  <installed facet="jst.web" version="3.0"/>[m[41m[m
+[32m+[m[32m</faceted-project>[m[41m[m
+[1mdiff --git a/HelloWorld/.settings/org.eclipse.wst.validation.prefs b/HelloWorld/.settings/org.eclipse.wst.validation.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..75abca5[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.eclipse.wst.validation.prefs[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m#Fri Jun 06 17:00:12 BST 2008[m
+[32m+[m[32mDELEGATES_PREFERENCE=delegateValidatorListorg.eclipse.wst.wsdl.validation.internal.eclipse.WSDLDelegatingValidator\=org.eclipse.wst.wsdl.validation.internal.eclipse.Validator;org.eclipse.wst.xsd.core.internal.validation.eclipse.XSDDelegatingValidator\=org.eclipse.wst.xsd.core.internal.validation.eclipse.Validator;[m
+[32m+[m[32mUSER_BUILD_PREFERENCE=enabledBuildValidatorListorg.eclipse.wst.wsdl.validation.internal.eclipse.WSDLDelegatingValidator;org.eclipse.wst.xsd.core.internal.validation.eclipse.XSDDelegatingValidator;org.eclipse.jst.jsf.validation.internal.JSPSemanticsValidator;org.eclipse.wst.dtd.core.internal.validation.eclipse.Validator;org.eclipse.wst.xml.core.internal.validation.eclipse.Validator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;org.eclipse.jst.jsf.validation.internal.appconfig.AppConfigValidator;org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator;org.eclipse.wst.html.internal.validation.HTMLValidator;org.eclipse.jst.jsp.core.internal.validation.JSPContentValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;org.eclipse.wst.wsi.ui.internal.WSIMessageValidator;[m
+[32m+[m[32mUSER_MANUAL_PREFERENCE=enabledManualValidatorListorg.eclipse.wst.wsdl.validation.internal.eclipse.WSDLDelegatingValidator;org.eclipse.wst.xsd.core.internal.validation.eclipse.XSDDelegatingValidator;org.eclipse.jst.jsf.validation.internal.JSPSemanticsValidator;org.eclipse.wst.dtd.core.internal.validation.eclipse.Validator;org.eclipse.wst.xml.core.internal.validation.eclipse.Validator;org.eclipse.wst.common.componentcore.internal.ModuleCoreValidator;org.eclipse.jst.jsf.validation.internal.appconfig.AppConfigValidator;org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator;org.eclipse.wst.html.internal.validation.HTMLValidator;org.eclipse.jst.jsp.core.internal.validation.JSPContentValidator;org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;org.eclipse.wst.wsi.ui.internal.WSIMessageValidator;[m
+[32m+[m[32mUSER_PREFERENCE=overrideGlobalPreferencesfalse[m
+[32m+[m[32meclipse.preferences.version=1[m
+[1mdiff --git a/HelloWorld/.settings/org.springframework.ide.eclipse.beans.core.prefs b/HelloWorld/.settings/org.springframework.ide.eclipse.beans.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bb50bcf[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.springframework.ide.eclipse.beans.core.prefs[m
+[36m@@ -0,0 +1,78 @@[m
+[32m+[m[32m#Mon Oct 18 12:37:52 EDT 2010[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.osgi.org/xmlns/blueprint/v1.0.0=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/aop=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/batch=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/beans=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/context=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/faces=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/flex=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/file=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/http=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/httpinvoker=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/ip=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/jdbc=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/jms=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/jmx=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/mail=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/rmi=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/security=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/stream=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/ws=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/integration/xml=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/jdbc=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/jee=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/jms=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/lang=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/mvc=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/osgi=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/osgi-compendium=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/oxm=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/p=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/security=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/task=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/tx=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/util=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/web-services=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.default.version.http\://www.springframework.org/schema/webflow-config=[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.osgi.org/xmlns/blueprint/v1.0.0=bp[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/aop=aop[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/batch=batch[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/beans=beans[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/context=context[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/faces=faces[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/flex=flex[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration=int[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/file=int-file[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/http=int-http[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/httpinvoker=int-httpinvoker[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/ip=int-ip[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/jdbc=int-jdbc[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/jms=int-jms[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/jmx=int-jmx[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/mail=int-mail[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/rmi=int-rmi[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/security=int-security[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/stream=int-stream[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/ws=int-ws[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/integration/xml=int-xml[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/jdbc=jdbc[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/jee=jee[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/jms=jms[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/lang=lang[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/mvc=mvc[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/osgi=osgi[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/osgi-compendium=osgix[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/oxm=oxm[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/p=p[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/security=sec[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/task=task[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/tx=tx[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/util=util[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/web-services=ws[m
+[32m+[m[32m//org.springframework.ide.eclipse.beans.core.prefix.http\://www.springframework.org/schema/webflow-config=flow[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.springframework.ide.eclipse.beans.core.default.version.check.classpath=true[m
+[32m+[m[32morg.springframework.ide.eclipse.beans.core.enable.project.preferences=false[m
+[32m+[m[32morg.springframework.ide.eclipse.beans.core.ignoreMissingNamespaceHandler=false[m
+[32m+[m[32morg.springframework.ide.eclipse.beans.core.loadNamespaceHandlerFromClasspath=false[m
+[1mdiff --git a/HelloWorld/.settings/org.springframework.ide.eclipse.core.prefs b/HelloWorld/.settings/org.springframework.ide.eclipse.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0f65cd5[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.settings/org.springframework.ide.eclipse.core.prefs[m
+[36m@@ -0,0 +1,69 @@[m
+[32m+[m[32m#Tue Apr 20 16:59:06 EDT 2010[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.springframework.ide.eclipse.core.builders.enable.aopreferencemodelbuilder=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.builders.enable.beanmetadatabuilder=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.builders.enable.osgibundleupdater=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.enable.project.preferences=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.enable.com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.enable.com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.enable.com.springsource.sts.server.quickfix.manifestvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.enable.org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.enable.org.springframework.ide.eclipse.core.springvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.enable.org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.applicationSymbolicNameRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.applicationVersionRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.bundleActivationPolicyRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.bundleActivatorRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.bundleManifestVersionRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.bundleNameRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.bundleSymbolicNameRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.bundleVersionRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.exportPackageRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.importRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.parsingProblemsRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.server.ide.manifest.core.requireBundleRule-com.springsource.server.ide.manifest.core.manifestvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.AvoidDriverManagerDataSource-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.ImportElementsAtTopRulee-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.ParentBeanSpecifiesAbstractClassRule-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.RefElementRule-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.TooManyBeansInFileRule-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.UnnecessaryValueElementRule-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.com.springsource.sts.bestpractices.UseBeanInheritance-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.bestpractices.legacyxmlusage.jndiobjectfactory-com.springsource.sts.bestpractices.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.server.quickfix.importBundleVersionRule-com.springsource.sts.server.quickfix.manifestvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.server.quickfix.importLibraryVersionRule-com.springsource.sts.server.quickfix.manifestvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.server.quickfix.importPackageVersionRule-com.springsource.sts.server.quickfix.manifestvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.com.springsource.sts.server.quickfix.requireBundleVersionRule-com.springsource.sts.server.quickfix.manifestvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.autowire.autowire-org.springframework.ide.eclipse.beans.core.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanAlias-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanClass-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanConstructorArgument-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanDefinition-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanDefinitionHolder-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanFactory-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanInitDestroyMethod-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanProperty-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.beanReference-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.methodOverride-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.parsingProblems-org.springframework.ide.eclipse.beans.core.beansvalidator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.requiredProperty-org.springframework.ide.eclipse.beans.core.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.beans.core.toolAnnotation-org.springframework.ide.eclipse.beans.core.beansvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.core.springClasspath-org.springframework.ide.eclipse.core.springvalidator=false[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.action-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.actionstate-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.attribute-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.attributemapper-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.beanaction-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.evaluationaction-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.evaluationresult-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.exceptionhandler-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.import-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.inputattribute-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.mapping-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.outputattribute-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.set-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.state-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.subflowstate-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.transition-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.variable-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[32m+[m[32morg.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.webflow.core.validation.webflowstate-org.springframework.ide.eclipse.webflow.core.validator=true[m
+[1mdiff --git a/HelloWorld/.springBeans b/HelloWorld/.springBeans[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4d9eb32[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/.springBeans[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<beansProjectDescription>[m
+[32m+[m	[32m<version>1</version>[m
+[32m+[m	[32m<pluginVersion><![CDATA[2.5.0.201010141000-RC1]]></pluginVersion>[m
+[32m+[m	[32m<configSuffixes>[m
+[32m+[m		[32m<configSuffix><![CDATA[xml]]></configSuffix>[m
+[32m+[m	[32m</configSuffixes>[m
+[32m+[m	[32m<enableImports><![CDATA[true]]></enableImports>[m
+[32m+[m	[32m<configs>[m
+[32m+[m	[32m</configs>[m
+[32m+[m	[32m<configSets>[m
+[32m+[m	[32m</configSets>[m
+[32m+[m[32m</beansProjectDescription>[m
+[1mdiff --git a/HelloWorld/pom.xml b/HelloWorld/pom.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..49b8e12[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/pom.xml[m
+[36m@@ -0,0 +1,158 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[m
+[32m+[m	[32mxsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">[m
+[32m+[m	[32m<modelVersion>4.0.0</modelVersion>[m
+[32m+[m	[32m<groupId>com.hello</groupId>[m
+[32m+[m	[32m<artifactId>world</artifactId>[m
+[32m+[m	[32m<name>HelloWorld</name>[m
+[32m+[m	[32m<packaging>war</packaging>[m
+[32m+[m	[32m<version>1.0.0-BUILD-SNAPSHOT</version>[m
+[32m+[m	[32m<properties>[m
+[32m+[m		[32m<java-version>1.6</java-version>[m
+[32m+[m		[32m<org.springframework-version>3.1.1.RELEASE</org.springframework-version>[m
+[32m+[m		[32m<org.aspectj-version>1.6.10</org.aspectj-version>[m
+[32m+[m		[32m<org.slf4j-version>1.6.6</org.slf4j-version>[m
+[32m+[m	[32m</properties>[m
+[32m+[m	[32m<dependencies>[m
+[32m+[m		[32m<!-- Spring -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.springframework</groupId>[m
+[32m+[m			[32m<artifactId>spring-context</artifactId>[m
+[32m+[m			[32m<version>${org.springframework-version}</version>[m
+[32m+[m			[32m<exclusions>[m
+[32m+[m				[32m<!-- Exclude Commons Logging in favor of SLF4j -->[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>commons-logging</groupId>[m
+[32m+[m					[32m<artifactId>commons-logging</artifactId>[m
+[32m+[m				[32m </exclusion>[m
+[32m+[m			[32m</exclusions>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.springframework</groupId>[m
+[32m+[m			[32m<artifactId>spring-webmvc</artifactId>[m
+[32m+[m			[32m<version>${org.springframework-version}</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m[41m				[m
+[32m+[m		[32m<!-- AspectJ -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.aspectj</groupId>[m
+[32m+[m			[32m<artifactId>aspectjrt</artifactId>[m
+[32m+[m			[32m<version>${org.aspectj-version}</version>[m
+[32m+[m		[32m</dependency>[m[41m	[m
+[32m+[m[41m		[m
+[32m+[m		[32m<!-- Logging -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.slf4j</groupId>[m
+[32m+[m			[32m<artifactId>slf4j-api</artifactId>[m
+[32m+[m			[32m<version>${org.slf4j-version}</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.slf4j</groupId>[m
+[32m+[m			[32m<artifactId>jcl-over-slf4j</artifactId>[m
+[32m+[m			[32m<version>${org.slf4j-version}</version>[m
+[32m+[m			[32m<scope>runtime</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.slf4j</groupId>[m
+[32m+[m			[32m<artifactId>slf4j-log4j12</artifactId>[m
+[32m+[m			[32m<version>${org.slf4j-version}</version>[m
+[32m+[m			[32m<scope>runtime</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>log4j</groupId>[m
+[32m+[m			[32m<artifactId>log4j</artifactId>[m
+[32m+[m			[32m<version>1.2.15</version>[m
+[32m+[m			[32m<exclusions>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>javax.mail</groupId>[m
+[32m+[m					[32m<artifactId>mail</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>javax.jms</groupId>[m
+[32m+[m					[32m<artifactId>jms</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>com.sun.jdmk</groupId>[m
+[32m+[m					[32m<artifactId>jmxtools</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>com.sun.jmx</groupId>[m
+[32m+[m					[32m<artifactId>jmxri</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m			[32m</exclusions>[m
+[32m+[m			[32m<scope>runtime</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m
+[32m+[m		[32m<!-- @Inject -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.inject</groupId>[m
+[32m+[m			[32m<artifactId>javax.inject</artifactId>[m
+[32m+[m			[32m<version>1</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m[41m				[m
+[32m+[m		[32m<!-- Servlet -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.servlet</groupId>[m
+[32m+[m			[32m<artifactId>servlet-api</artifactId>[m
+[32m+[m			[32m<version>2.5</version>[m
+[32m+[m			[32m<scope>provided</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.servlet.jsp</groupId>[m
+[32m+[m			[32m<artifactId>jsp-api</artifactId>[m
+[32m+[m			[32m<version>2.1</version>[m
+[32m+[m			[32m<scope>provided</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.servlet</groupId>[m
+[32m+[m			[32m<artifactId>jstl</artifactId>[m
+[32m+[m			[32m<version>1.2</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m[41m	[m
+[32m+[m		[32m<!-- Test -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>junit</groupId>[m
+[32m+[m			[32m<artifactId>junit</artifactId>[m
+[32m+[m			[32m<version>4.7</version>[m
+[32m+[m			[32m<scope>test</scope>[m
+[32m+[m		[32m</dependency>[m[41m        [m
+[32m+[m	[32m</dependencies>[m
+[32m+[m[32m    <build>[m
+[32m+[m[32m        <plugins>[m
+[32m+[m[32m            <plugin>[m
+[32m+[m[32m                <artifactId>maven-eclipse-plugin</artifactId>[m
+[32m+[m[32m                <version>2.9</version>[m
+[32m+[m[32m                <configuration>[m
+[32m+[m[32m                    <additionalProjectnatures>[m
+[32m+[m[32m                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>[m
+[32m+[m[32m                    </additionalProjectnatures>[m
+[32m+[m[32m                    <additionalBuildcommands>[m
+[32m+[m[32m                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>[m
+[32m+[m[32m                    </additionalBuildcommands>[m
+[32m+[m[32m                    <downloadSources>true</downloadSources>[m
+[32m+[m[32m                    <downloadJavadocs>true</downloadJavadocs>[m
+[32m+[m[32m                </configuration>[m
+[32m+[m[32m            </plugin>[m
+[32m+[m[32m            <plugin>[m
+[32m+[m[32m                <groupId>org.apache.maven.plugins</groupId>[m
+[32m+[m[32m                <artifactId>maven-compiler-plugin</artifactId>[m
+[32m+[m[32m                <version>2.5.1</version>[m
+[32m+[m[32m                <configuration>[m
+[32m+[m[32m                    <source>1.6</source>[m
+[32m+[m[32m                    <target>1.6</target>[m
+[32m+[m[32m                    <compilerArgument>-Xlint:all</compilerArgument>[m
+[32m+[m[32m                    <showWarnings>true</showWarnings>[m
+[32m+[m[32m                    <showDeprecation>true</showDeprecation>[m
+[32m+[m[32m                </configuration>[m
+[32m+[m[32m            </plugin>[m
+[32m+[m[32m            <plugin>[m
+[32m+[m[32m                <groupId>org.codehaus.mojo</groupId>[m
+[32m+[m[32m                <artifactId>exec-maven-plugin</artifactId>[m
+[32m+[m[32m                <version>1.2.1</version>[m
+[32m+[m[32m                <configuration>[m
+[32m+[m[32m                    <mainClass>org.test.int1.Main</mainClass>[m
+[32m+[m[32m                </configuration>[m
+[32m+[m[32m            </plugin>[m
+[32m+[m[32m        </plugins>[m
+[32m+[m[32m    </build>[m
+[32m+[m[32m</project>[m
+[1mdiff --git a/HelloWorld/src/main/java/com/hello/world/HomeController.java b/HelloWorld/src/main/java/com/hello/world/HomeController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6dca0fb[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/main/java/com/hello/world/HomeController.java[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32mpackage com.hello.world;[m
+[32m+[m
+[32m+[m[32mimport java.text.DateFormat;[m
+[32m+[m[32mimport java.util.Date;[m
+[32m+[m[32mimport java.util.Locale;[m
+[32m+[m
+[32m+[m[32mimport org.slf4j.Logger;[m
+[32m+[m[32mimport org.slf4j.LoggerFactory;[m
+[32m+[m[32mimport org.springframework.stereotype.Controller;[m
+[32m+[m[32mimport org.springframework.ui.Model;[m
+[32m+[m[32mimport org.springframework.web.bind.annotation.RequestMapping;[m
+[32m+[m[32mimport org.springframework.web.bind.annotation.RequestMethod;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Handles requests for the application home page.[m
+[32m+[m[32m */[m
+[32m+[m[32m@Controller[m
+[32m+[m[32mpublic class HomeController {[m
+[32m+[m[41m	[m
+[32m+[m	[32mprivate static final Logger logger = LoggerFactory.getLogger(HomeController.class);[m
+[32m+[m[41m	[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * Simply selects the home view to render by returning its name.[m
+[32m+[m	[32m */[m
+[32m+[m	[32m@RequestMapping(value = "/", method = RequestMethod.GET)[m
+[32m+[m	[32mpublic String home(Locale locale, Model model) {[m
+[32m+[m		[32mlogger.info("Welcome home! The client locale is {}.", locale);[m
+[32m+[m[41m		[m
+[32m+[m		[32mDate date = new Date();[m
+[32m+[m		[32mDateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);[m
+[32m+[m[41m		[m
+[32m+[m		[32mString formattedDate = dateFormat.format(date);[m
+[32m+[m[41m		[m
+[32m+[m		[32mmodel.addAttribute("serverTime", formattedDate );[m
+[32m+[m[41m		[m
+[32m+[m		[32mreturn "home";[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/HelloWorld/src/main/resources/log4j.xml b/HelloWorld/src/main/resources/log4j.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5b828a2[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/main/resources/log4j.xml[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">[m
+[32m+[m[32m<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">[m
+[32m+[m
+[32m+[m	[32m<!-- Appenders -->[m
+[32m+[m	[32m<appender name="console" class="org.apache.log4j.ConsoleAppender">[m
+[32m+[m		[32m<param name="Target" value="System.out" />[m
+[32m+[m		[32m<layout class="org.apache.log4j.PatternLayout">[m
+[32m+[m			[32m<param name="ConversionPattern" value="%-5p: %c - %m%n" />[m
+[32m+[m		[32m</layout>[m
+[32m+[m	[32m</appender>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Application Loggers -->[m
+[32m+[m	[32m<logger name="com.hello.world">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- 3rdparty Loggers -->[m
+[32m+[m	[32m<logger name="org.springframework.core">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.beans">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.context">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<logger name="org.springframework.web">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<!-- Root Logger -->[m
+[32m+[m	[32m<root>[m
+[32m+[m		[32m<priority value="warn" />[m
+[32m+[m		[32m<appender-ref ref="console" />[m
+[32m+[m	[32m</root>[m
+[32m+[m[41m	[m
+[32m+[m[32m</log4j:configuration>[m
+[1mdiff --git a/HelloWorld/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml b/HelloWorld/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4a3840d[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml[m
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<beans:beans xmlns="http://www.springframework.org/schema/mvc"[m
+[32m+[m	[32mxmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[m
+[32m+[m	[32mxmlns:beans="http://www.springframework.org/schema/beans"[m
+[32m+[m	[32mxmlns:context="http://www.springframework.org/schema/context"[m
+[32m+[m	[32mxsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd[m
+[32m+[m		[32mhttp://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd[m
+[32m+[m		[32mhttp://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">[m
+[32m+[m
+[32m+[m	[32m<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Enables the Spring MVC @Controller programming model -->[m
+[32m+[m	[32m<annotation-driven />[m
+[32m+[m
+[32m+[m	[32m<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->[m
+[32m+[m	[32m<resources mapping="/resources/**" location="/resources/" />[m
+[32m+[m
+[32m+[m	[32m<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->[m
+[32m+[m	[32m<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">[m
+[32m+[m		[32m<beans:property name="prefix" value="/WEB-INF/views/" />[m
+[32m+[m		[32m<beans:property name="suffix" value=".jsp" />[m
+[32m+[m	[32m</beans:bean>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<context:component-scan base-package="com.hello.world" />[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m</beans:beans>[m
+[1mdiff --git a/HelloWorld/src/main/webapp/WEB-INF/spring/root-context.xml b/HelloWorld/src/main/webapp/WEB-INF/spring/root-context.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f7a30f0[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/main/webapp/WEB-INF/spring/root-context.xml[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<beans xmlns="http://www.springframework.org/schema/beans"[m
+[32m+[m	[32mxmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[m
+[32m+[m	[32mxsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Root Context: defines shared resources visible to all other web components -->[m
+[32m+[m[41m		[m
+[32m+[m[32m</beans>[m
+[1mdiff --git a/HelloWorld/src/main/webapp/WEB-INF/views/home.jsp b/HelloWorld/src/main/webapp/WEB-INF/views/home.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4783383[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/main/webapp/WEB-INF/views/home.jsp[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32m<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>[m
+[32m+[m[32m<%@ page session="false" %>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m	[32m<title>Home</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<h1>[m
+[32m+[m	[32mHello world![m[41m  [m
+[32m+[m[32m</h1>[m
+[32m+[m
+[32m+[m[32m<P>  The time on the server is ${serverTime}. </P>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+[1mdiff --git a/HelloWorld/src/main/webapp/WEB-INF/web.xml b/HelloWorld/src/main/webapp/WEB-INF/web.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b6cc56c[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/main/webapp/WEB-INF/web.xml[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"[m
+[32m+[m	[32mxmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[m
+[32m+[m	[32mxsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">[m
+[32m+[m
+[32m+[m	[32m<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->[m
+[32m+[m	[32m<context-param>[m
+[32m+[m		[32m<param-name>contextConfigLocation</param-name>[m
+[32m+[m		[32m<param-value>/WEB-INF/spring/root-context.xml</param-value>[m
+[32m+[m	[32m</context-param>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Creates the Spring Container shared by all Servlets and Filters -->[m
+[32m+[m	[32m<listener>[m
+[32m+[m		[32m<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>[m
+[32m+[m	[32m</listener>[m
+[32m+[m
+[32m+[m	[32m<!-- Processes application requests -->[m
+[32m+[m	[32m<servlet>[m
+[32m+[m		[32m<servlet-name>appServlet</servlet-name>[m
+[32m+[m		[32m<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>[m
+[32m+[m		[32m<init-param>[m
+[32m+[m			[32m<param-name>contextConfigLocation</param-name>[m
+[32m+[m			[32m<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>[m
+[32m+[m		[32m</init-param>[m
+[32m+[m		[32m<load-on-startup>1</load-on-startup>[m
+[32m+[m	[32m</servlet>[m
+[32m+[m[41m		[m
+[32m+[m	[32m<servlet-mapping>[m
+[32m+[m		[32m<servlet-name>appServlet</servlet-name>[m
+[32m+[m		[32m<url-pattern>/</url-pattern>[m
+[32m+[m	[32m</servlet-mapping>[m
+[32m+[m
+[32m+[m[32m</web-app>[m
+[1mdiff --git a/HelloWorld/src/test/resources/log4j.xml b/HelloWorld/src/test/resources/log4j.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7e51c17[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/src/test/resources/log4j.xml[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">[m
+[32m+[m[32m<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">[m
+[32m+[m
+[32m+[m	[32m<!-- Appenders -->[m
+[32m+[m	[32m<appender name="console" class="org.apache.log4j.ConsoleAppender">[m
+[32m+[m		[32m<param name="Target" value="System.out" />[m
+[32m+[m		[32m<layout class="org.apache.log4j.PatternLayout">[m
+[32m+[m			[32m<param name="ConversionPattern" value="%-5p: %c - %m%n" />[m
+[32m+[m		[32m</layout>[m
+[32m+[m	[32m</appender>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Application Loggers -->[m
+[32m+[m	[32m<logger name="com.hello.world">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- 3rdparty Loggers -->[m
+[32m+[m	[32m<logger name="org.springframework.core">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.beans">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.context">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<logger name="org.springframework.web">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<!-- Root Logger -->[m
+[32m+[m	[32m<root>[m
+[32m+[m		[32m<priority value="info" />[m
+[32m+[m		[32m<appender-ref ref="console" />[m
+[32m+[m	[32m</root>[m
+[32m+[m[41m	[m
+[32m+[m[32m</log4j:configuration>[m
+[1mdiff --git a/HelloWorld/target/classes/com/hello/world/HomeController.class b/HelloWorld/target/classes/com/hello/world/HomeController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..05da42b[m
+Binary files /dev/null and b/HelloWorld/target/classes/com/hello/world/HomeController.class differ
+[1mdiff --git a/HelloWorld/target/classes/log4j.xml b/HelloWorld/target/classes/log4j.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5b828a2[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/target/classes/log4j.xml[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">[m
+[32m+[m[32m<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">[m
+[32m+[m
+[32m+[m	[32m<!-- Appenders -->[m
+[32m+[m	[32m<appender name="console" class="org.apache.log4j.ConsoleAppender">[m
+[32m+[m		[32m<param name="Target" value="System.out" />[m
+[32m+[m		[32m<layout class="org.apache.log4j.PatternLayout">[m
+[32m+[m			[32m<param name="ConversionPattern" value="%-5p: %c - %m%n" />[m
+[32m+[m		[32m</layout>[m
+[32m+[m	[32m</appender>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Application Loggers -->[m
+[32m+[m	[32m<logger name="com.hello.world">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- 3rdparty Loggers -->[m
+[32m+[m	[32m<logger name="org.springframework.core">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.beans">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.context">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<logger name="org.springframework.web">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<!-- Root Logger -->[m
+[32m+[m	[32m<root>[m
+[32m+[m		[32m<priority value="warn" />[m
+[32m+[m		[32m<appender-ref ref="console" />[m
+[32m+[m	[32m</root>[m
+[32m+[m[41m	[m
+[32m+[m[32m</log4j:configuration>[m
+[1mdiff --git a/HelloWorld/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF b/HelloWorld/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3390520[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32mManifest-Version: 1.0[m[41m[m
+[32m+[m[32mBuild-Jdk: 1.7.0_75[m[41m[m
+[32m+[m[32mBuilt-By: SeungYeop[m[41m[m
+[32m+[m[32mCreated-By: Maven Integration for Eclipse[m[41m[m
+[32m+[m[41m[m
+[1mdiff --git a/HelloWorld/target/m2e-wtp/web-resources/META-INF/maven/com.hello/world/pom.properties b/HelloWorld/target/m2e-wtp/web-resources/META-INF/maven/com.hello/world/pom.properties[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dd5e0cb[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/target/m2e-wtp/web-resources/META-INF/maven/com.hello/world/pom.properties[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32m#Generated by Maven Integration for Eclipse[m[41m[m
+[32m+[m[32m#Sat Mar 14 21:25:52 KST 2015[m[41m[m
+[32m+[m[32mversion=1.0.0-BUILD-SNAPSHOT[m[41m[m
+[32m+[m[32mgroupId=com.hello[m[41m[m
+[32m+[m[32mm2e.projectName=HelloWorld[m[41m[m
+[32m+[m[32mm2e.projectLocation=C\:\\gitRepository\\HelloWorld[m[41m[m
+[32m+[m[32martifactId=world[m[41m[m
+[1mdiff --git a/HelloWorld/target/m2e-wtp/web-resources/META-INF/maven/com.hello/world/pom.xml b/HelloWorld/target/m2e-wtp/web-resources/META-INF/maven/com.hello/world/pom.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..49b8e12[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/target/m2e-wtp/web-resources/META-INF/maven/com.hello/world/pom.xml[m
+[36m@@ -0,0 +1,158 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[m
+[32m+[m	[32mxsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">[m
+[32m+[m	[32m<modelVersion>4.0.0</modelVersion>[m
+[32m+[m	[32m<groupId>com.hello</groupId>[m
+[32m+[m	[32m<artifactId>world</artifactId>[m
+[32m+[m	[32m<name>HelloWorld</name>[m
+[32m+[m	[32m<packaging>war</packaging>[m
+[32m+[m	[32m<version>1.0.0-BUILD-SNAPSHOT</version>[m
+[32m+[m	[32m<properties>[m
+[32m+[m		[32m<java-version>1.6</java-version>[m
+[32m+[m		[32m<org.springframework-version>3.1.1.RELEASE</org.springframework-version>[m
+[32m+[m		[32m<org.aspectj-version>1.6.10</org.aspectj-version>[m
+[32m+[m		[32m<org.slf4j-version>1.6.6</org.slf4j-version>[m
+[32m+[m	[32m</properties>[m
+[32m+[m	[32m<dependencies>[m
+[32m+[m		[32m<!-- Spring -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.springframework</groupId>[m
+[32m+[m			[32m<artifactId>spring-context</artifactId>[m
+[32m+[m			[32m<version>${org.springframework-version}</version>[m
+[32m+[m			[32m<exclusions>[m
+[32m+[m				[32m<!-- Exclude Commons Logging in favor of SLF4j -->[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>commons-logging</groupId>[m
+[32m+[m					[32m<artifactId>commons-logging</artifactId>[m
+[32m+[m				[32m </exclusion>[m
+[32m+[m			[32m</exclusions>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.springframework</groupId>[m
+[32m+[m			[32m<artifactId>spring-webmvc</artifactId>[m
+[32m+[m			[32m<version>${org.springframework-version}</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m[41m				[m
+[32m+[m		[32m<!-- AspectJ -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.aspectj</groupId>[m
+[32m+[m			[32m<artifactId>aspectjrt</artifactId>[m
+[32m+[m			[32m<version>${org.aspectj-version}</version>[m
+[32m+[m		[32m</dependency>[m[41m	[m
+[32m+[m[41m		[m
+[32m+[m		[32m<!-- Logging -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.slf4j</groupId>[m
+[32m+[m			[32m<artifactId>slf4j-api</artifactId>[m
+[32m+[m			[32m<version>${org.slf4j-version}</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.slf4j</groupId>[m
+[32m+[m			[32m<artifactId>jcl-over-slf4j</artifactId>[m
+[32m+[m			[32m<version>${org.slf4j-version}</version>[m
+[32m+[m			[32m<scope>runtime</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.slf4j</groupId>[m
+[32m+[m			[32m<artifactId>slf4j-log4j12</artifactId>[m
+[32m+[m			[32m<version>${org.slf4j-version}</version>[m
+[32m+[m			[32m<scope>runtime</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>log4j</groupId>[m
+[32m+[m			[32m<artifactId>log4j</artifactId>[m
+[32m+[m			[32m<version>1.2.15</version>[m
+[32m+[m			[32m<exclusions>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>javax.mail</groupId>[m
+[32m+[m					[32m<artifactId>mail</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>javax.jms</groupId>[m
+[32m+[m					[32m<artifactId>jms</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>com.sun.jdmk</groupId>[m
+[32m+[m					[32m<artifactId>jmxtools</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m				[32m<exclusion>[m
+[32m+[m					[32m<groupId>com.sun.jmx</groupId>[m
+[32m+[m					[32m<artifactId>jmxri</artifactId>[m
+[32m+[m				[32m</exclusion>[m
+[32m+[m			[32m</exclusions>[m
+[32m+[m			[32m<scope>runtime</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m
+[32m+[m		[32m<!-- @Inject -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.inject</groupId>[m
+[32m+[m			[32m<artifactId>javax.inject</artifactId>[m
+[32m+[m			[32m<version>1</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m[41m				[m
+[32m+[m		[32m<!-- Servlet -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.servlet</groupId>[m
+[32m+[m			[32m<artifactId>servlet-api</artifactId>[m
+[32m+[m			[32m<version>2.5</version>[m
+[32m+[m			[32m<scope>provided</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.servlet.jsp</groupId>[m
+[32m+[m			[32m<artifactId>jsp-api</artifactId>[m
+[32m+[m			[32m<version>2.1</version>[m
+[32m+[m			[32m<scope>provided</scope>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>javax.servlet</groupId>[m
+[32m+[m			[32m<artifactId>jstl</artifactId>[m
+[32m+[m			[32m<version>1.2</version>[m
+[32m+[m		[32m</dependency>[m
+[32m+[m[41m	[m
+[32m+[m		[32m<!-- Test -->[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>junit</groupId>[m
+[32m+[m			[32m<artifactId>junit</artifactId>[m
+[32m+[m			[32m<version>4.7</version>[m
+[32m+[m			[32m<scope>test</scope>[m
+[32m+[m		[32m</dependency>[m[41m        [m
+[32m+[m	[32m</dependencies>[m
+[32m+[m[32m    <build>[m
+[32m+[m[32m        <plugins>[m
+[32m+[m[32m            <plugin>[m
+[32m+[m[32m                <artifactId>maven-eclipse-plugin</artifactId>[m
+[32m+[m[32m                <version>2.9</version>[m
+[32m+[m[32m                <configuration>[m
+[32m+[m[32m                    <additionalProjectnatures>[m
+[32m+[m[32m                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>[m
+[32m+[m[32m                    </additionalProjectnatures>[m
+[32m+[m[32m                    <additionalBuildcommands>[m
+[32m+[m[32m                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>[m
+[32m+[m[32m                    </additionalBuildcommands>[m
+[32m+[m[32m                    <downloadSources>true</downloadSources>[m
+[32m+[m[32m                    <downloadJavadocs>true</downloadJavadocs>[m
+[32m+[m[32m                </configuration>[m
+[32m+[m[32m            </plugin>[m
+[32m+[m[32m            <plugin>[m
+[32m+[m[32m                <groupId>org.apache.maven.plugins</groupId>[m
+[32m+[m[32m                <artifactId>maven-compiler-plugin</artifactId>[m
+[32m+[m[32m                <version>2.5.1</version>[m
+[32m+[m[32m                <configuration>[m
+[32m+[m[32m                    <source>1.6</source>[m
+[32m+[m[32m                    <target>1.6</target>[m
+[32m+[m[32m                    <compilerArgument>-Xlint:all</compilerArgument>[m
+[32m+[m[32m                    <showWarnings>true</showWarnings>[m
+[32m+[m[32m                    <showDeprecation>true</showDeprecation>[m
+[32m+[m[32m                </configuration>[m
+[32m+[m[32m            </plugin>[m
+[32m+[m[32m            <plugin>[m
+[32m+[m[32m                <groupId>org.codehaus.mojo</groupId>[m
+[32m+[m[32m                <artifactId>exec-maven-plugin</artifactId>[m
+[32m+[m[32m                <version>1.2.1</version>[m
+[32m+[m[32m                <configuration>[m
+[32m+[m[32m                    <mainClass>org.test.int1.Main</mainClass>[m
+[32m+[m[32m                </configuration>[m
+[32m+[m[32m            </plugin>[m
+[32m+[m[32m        </plugins>[m
+[32m+[m[32m    </build>[m
+[32m+[m[32m</project>[m
+[1mdiff --git a/HelloWorld/target/test-classes/log4j.xml b/HelloWorld/target/test-classes/log4j.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7e51c17[m
+[1m--- /dev/null[m
+[1m+++ b/HelloWorld/target/test-classes/log4j.xml[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">[m
+[32m+[m[32m<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">[m
+[32m+[m
+[32m+[m	[32m<!-- Appenders -->[m
+[32m+[m	[32m<appender name="console" class="org.apache.log4j.ConsoleAppender">[m
+[32m+[m		[32m<param name="Target" value="System.out" />[m
+[32m+[m		[32m<layout class="org.apache.log4j.PatternLayout">[m
+[32m+[m			[32m<param name="ConversionPattern" value="%-5p: %c - %m%n" />[m
+[32m+[m		[32m</layout>[m
+[32m+[m	[32m</appender>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- Application Loggers -->[m
+[32m+[m	[32m<logger name="com.hello.world">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- 3rdparty Loggers -->[m
+[32m+[m	[32m<logger name="org.springframework.core">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.beans">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<logger name="org.springframework.context">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<logger name="org.springframework.web">[m
+[32m+[m		[32m<level value="info" />[m
+[32m+[m	[32m</logger>[m
+[32m+[m
+[32m+[m	[32m<!-- Root Logger -->[m
+[32m+[m	[32m<root>[m
+[32m+[m		[32m<priority value="info" />[m
+[32m+[m		[32m<appender-ref ref="console" />[m
+[32m+[m	[32m</root>[m
+[32m+[m[41m	[m
+[32m+[m[32m</log4j:configuration>[m
+[1mdiff --git a/README.md b/README.md[m
+[1mdeleted file mode 100644[m
+[1mindex 7c46ea0..0000000[m
+[1m--- a/README.md[m
+[1m+++ /dev/null[m
+[36m@@ -1,2 +0,0 @@[m
+[31m-# Spring[m
+[31m-스프링 리파지토리[m
